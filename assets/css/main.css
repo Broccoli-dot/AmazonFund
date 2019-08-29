@@ -1744,7 +1744,7 @@
 	}
 
 	.inner {
-		max-width: 75em;
+		max-width: 90em;
 		margin: 0 auto;
 	}
 
@@ -3016,6 +3016,10 @@
 			color: #bbb;
 			text-decoration: none;
 		}
+
+	#helpButton {
+		color: orange;
+	}
 
 			#footer .copyright a:hover {
 				color: #bbb;
