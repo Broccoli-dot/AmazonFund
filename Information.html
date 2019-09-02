@@ -28,6 +28,7 @@
 			</header>
 
 		<!-- Main -->
+		
 			<section id="main" class="wrapper">
 				<div class="inner">
 					<header class="align-center">
@@ -36,6 +37,116 @@
 					</header>
 
 				<!-- Content -->
+				<script type="text/javascript" src="https://code.jquery.com/jquery-1.8.2.js"></script>
+				<style type="text/css">
+					#overlay {
+						position: fixed;
+						top: 0;
+						left: 0;
+						width: 100%;
+						height: 100%;
+						background-color: #000;
+						filter: alpha(opacity=70);
+						-moz-opacity: 0.7;
+						-khtml-opacity: 0.7;
+						opacity: 0.7;
+						z-index: 100;
+						display: none;
+					}
+
+					.cnt223 a {
+						text-decoration: none;
+					}
+
+					.popup {
+						width: 100%;
+						margin: auto;
+						display: none;
+						position: fixed;
+						z-index: 101;
+						align-content: center;
+					}
+
+					.cnt223 {
+						min-width: 1000px;
+						width: 1000px;
+						min-height: 250px;
+						margin-left: 350px;
+						margin-right: 350px;
+						background: #f3f3f3;
+						z-index: 103;
+						padding: 15px 35px;
+						border-radius: 5px;
+						box-shadow: 0 2px 5px #000;
+					}
+
+					.cnt223 h1 {
+						text-align: center;
+						font-weight: bold;
+						font-size: 200%;
+					}
+
+					.cnt223 p {
+						clear: both;
+						color: #555555;
+						/* text-align: justify; */
+						font-size: 20px;
+						font-family: sans-serif;
+					}
+
+					.cnt223 p a {
+						color: #d91900;
+						font-weight: bold;
+					}
+
+					.cnt223 .x {
+						float: right;
+						height: 35px;
+						left: 22px;
+						position: relative;
+						top: -25px;
+						width: 34px;
+					}
+
+					.cnt223 .x:hover {
+						cursor: pointer;
+					}
+				</style>
+				<script type='text/javascript'>
+					$(function () {
+						var overlay = $('<div id="overlay"></div>');
+						overlay.show();
+						overlay.appendTo(document.body);
+						$('.popup').show();
+						$('.close').click(function () {
+							$('.popup').hide();
+							overlay.appendTo(document.body).remove();
+							return false;
+						});
+
+
+
+
+						$('.x').click(function () {
+							$('.popup').hide();
+							overlay.appendTo(document.body).remove();
+							return false;
+						});
+					});
+				</script>
+				<div class='popup'>
+					<div class='cnt223'>
+						<h1>Important News</h1>
+						<div id="content">
+							<p>
+								<script>
+									$('#content').load('charities.html #main');
+								</script>
+							</p>
+						</div>
+						<a href='' class='close'>Close</a>
+					</div>
+				</div>
 				<div id="mainContent">
 					<h2 id="content">What is the Amazon?</h2>
 					<p id="WWFInfo">
@@ -59,19 +170,21 @@
 						</div>
 						<div class="6u$ 12u$(small)">
 							<h3>What exactly is happening?</h3>
-						
-							<p>
-								
-							</p>
+							<p>It's hard to find good quality news, especially ones that are real time and relevant, so while we are posting news form CNN, please be aware that this news is not the full news and as with anything, finding more sources for information is the way to go.</p>
+							<blockquote class="embedly-card" data-card-controls="0">
+								<h4><a href="https://www.cnn.com/americas/live-news/amazon-wildfire-august-2019/index.html">Wildfires rage in
+										the Amazon: Live updates</a></h4>
+								<p>By Meg Wagner and Mike Hayes, CNN Updated 4:24 p.m. ET, August 23, 2019 The Amazon is on fire: Wildfires
+									continued to burn at a record rate in Brazil's Amazon rainforest. The cause: Environmental organizations
+									and researchers say the wildfires were set by cattle ranchers and loggers who want to clear and utilize
+									the land, emboldened by the country's pro-business president.</p>
+							</blockquote>
+							<script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
 						</div>
 						<!-- Break -->
 						<div class="4u 12u$(medium)">
 							<h3>They beat you</h3>
 							<p><strong>And surprisingly it's a good thing</strong> As of today many countries have vowed to help the Amazon. As of 2019, out of the 5.5 million km2 of the Amazon, nearly 1.75 million km2 is resgistered as "conservation land". As of June 2019, Oil companies can no longer mine for oil in the Amazon, and they have place heavy fines for Oil mining. Peru has invested a large amount of money into animal rehabilitaion. So far the Amazon Conservation Team has mad esignificant strides in Columbia, Suriname and Brazil.</p>
-						</div>
-						<div class="4u$ 12u$(medium)">
-							<h3>The News for The Amazon</h3>
-							<iframe src="../assets/RSS Assets/rss.xml"></iframe>
 						</div>
 					</div>
 
@@ -80,7 +193,7 @@
 				<div class="inner">
 					<div class="flex">
 						<div class="copyright">
-							&copy; Untitled. Design: <a href="https://templated.co">TEMPLATED</a>. Images: <a href="https://unsplash.com">Unsplash</a>.
+							&copy; AmazonFund: The team who cares. Images: <a href="https://unsplash.com">Unsplash</a>.
 						</div>
 						<ul class="icons">
 							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
