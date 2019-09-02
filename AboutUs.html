@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Generic - Theory by TEMPLATED</title>
+		<title>AmazonFund - About Us</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -16,7 +16,7 @@
 		<!-- Header -->
 			<header id="header">
 				<div class="inner">
-					<a href="index.html" class="logo">Theory</a>
+					<a href="index.html" class="logo">AmazonFund</a>
 					<nav id="nav">
 						<a href="index.html">Home</a>
 						<a href="AboutUs.html">About us</a>
@@ -28,38 +28,141 @@
 			</header>
 
 		<!-- Three -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.8.2.js"></script>
+<style type="text/css">
+	#overlay {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: #000;
+		filter: alpha(opacity=70);
+		-moz-opacity: 0.7;
+		-khtml-opacity: 0.7;
+		opacity: 0.7;
+		z-index: 100;
+		display: none;
+	}
+
+	.cnt223 a {
+		text-decoration: none;
+	}
+
+	.popup {
+		width: 100%;
+		margin: auto;
+		display: none;
+		position: fixed;
+		z-index: 101;
+	}
+
+	.cnt223 {
+		min-width: 1000px;
+		width: 1000px;
+		min-height: 250px;
+		margin-left: 350px;
+		margin-right: 350px;
+		background: #f3f3f3;
+		z-index: 103;
+		padding: 15px 35px;
+		border-radius: 5px;
+		box-shadow: 0 2px 5px #000;
+	}
+
+	.cnt223 h1 {
+		text-align: center;
+		font-weight: bold;
+		font-size: 200%;
+	}
+
+	.cnt223 p {
+		clear: both;
+		color: #555555;
+		/* text-align: justify; */
+		font-size: 20px;
+		font-family: sans-serif;
+	}
+
+	.cnt223 p a {
+		color: #d91900;
+		font-weight: bold;
+	}
+
+	.cnt223 .x {
+		float: right;
+		height: 35px;
+		left: 22px;
+		position: relative;
+		top: -25px;
+		width: 34px;
+	}
+
+	.cnt223 .x:hover {
+		cursor: pointer;
+	}
+</style>
+<script type='text/javascript'>
+	$(function () {
+		var overlay = $('<div id="overlay"></div>');
+		overlay.show();
+		overlay.appendTo(document.body);
+		$('.popup').show();
+		$('.close').click(function () {
+			$('.popup').hide();
+			overlay.appendTo(document.body).remove();
+			return false;
+		});
+
+
+
+
+		$('.x').click(function () {
+			$('.popup').hide();
+			overlay.appendTo(document.body).remove();
+			return false;
+		});
+	});
+</script>
+<div class='popup'>
+	<div class='cnt223'>
+		<h1>Important News</h1>
+		<div id="content">
+			<p>
+				<script>
+					$('#content').load('charities.html #main');
+				</script>
+			</p>
+		</div>
+		<a href='' class='close'>Close</a>
+	</div>
+</div>
 			<section id="three" class="wrapper">
 				<div class="inner">
 					<header class="align-center">
-						<h2>Nunc Dignissim</h2>
-						<p>Aliquam erat volutpat nam dui </p>
+						<h2>About Us</h2>
+						<p>A couple of students that just care</p>
 					</header>
-					<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
-					<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+					<p>We are a group of students attending high school in Canada wanting to make a difference and help save the
+						Amazon. On a trip in late 2016, we visited the Amazon and were blown away by the beauty to the forest. It hurts
+						to know that that very forest is depleting as we speak and that we aren’t doing much about it. For this reason
+						we, as a group decided that WE needed to make a difference and get the community involved. We had to act fast. In fact the very first version of this site launched just 2 days after this idea was conceived. And as a starting organisation, we didn't have much money to spend on websites, so this entire website had to be built by hand!</p>
+					<p>Seeing as there was little to no help coming in from Canada, and a lot of government work had backfired. We
+						decided to go through NGO’s, after all they seem to have more influence in the region. And after careful
+						consideration, we also knew that there had to be steps we could take to prevent such a thing from happening
+						again. Therefore we also allow users to sign a pledge, to ensure that governments will take action to prevent
+						such a thing form happening.
+</p>
 					<div class="flex flex-2">
 						<article>
 							<div class="image fit">
-								<img src="images/pic01.jpg" alt="Pic 01" />
+								<img src="images/studentProtest.jpg" alt="Pic 01" />
 							</div>
-							<header>
-								<h3>Praesent placerat magna</h3>
-							</header>
-							<p>Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor lorem ipsum.</p>
-							<footer>
-								<a href="#" class="button special">More</a>
-							</footer>
 						</article>
 						<article>
 							<div class="image fit">
-								<img src="images/pic02.jpg" alt="Pic 02" />
+								<img src="images/studentProtest2.jpg" alt="Pic 02" />
 							</div>
-							<header>
-								<h3>Fusce pellentesque tempus</h3>
-							</header>
-							<p>Sed adipiscing ornare risus. Morbi est est, blandit sit amet, sagittis vel, euismod vel, velit. Pellentesque egestas sem. Suspendisse commodo ullamcorper magna non comodo sodales tempus.</p>
-							<footer>
-								<a href="#" class="button special">More</a>
-							</footer>
 						</article>
 					</div>
 				</div>
@@ -70,7 +173,7 @@
 				<div class="inner">
 					<div class="flex">
 						<div class="copyright">
-							&copy; Untitled. Design: <a href="https://templated.co">TEMPLATED</a>. Images: <a href="https://unsplash.com">Unsplash</a>.
+							&copy; AmazonFund: The team who cares. Images: <a href="https://unsplash.com">Unsplash</a>.
 						</div>
 						<ul class="icons">
 							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>

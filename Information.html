@@ -16,7 +16,7 @@
 		<!-- Header -->
 			<header id="header">
 				<div class="inner">
-					<a href="index.html" class="logo">*name*</a>
+					<a href="index.html" class="logo">AmazonFund</a>
 					<nav id="nav">
 						<a href="index.html">Home</a>
 						<a href="AboutUs.html">About us</a>
@@ -28,6 +28,7 @@
 			</header>
 
 		<!-- Main -->
+		
 			<section id="main" class="wrapper">
 				<div class="inner">
 					<header class="align-center">
@@ -36,44 +37,154 @@
 					</header>
 
 				<!-- Content -->
+				<script type="text/javascript" src="https://code.jquery.com/jquery-1.8.2.js"></script>
+				<style type="text/css">
+					#overlay {
+						position: fixed;
+						top: 0;
+						left: 0;
+						width: 100%;
+						height: 100%;
+						background-color: #000;
+						filter: alpha(opacity=70);
+						-moz-opacity: 0.7;
+						-khtml-opacity: 0.7;
+						opacity: 0.7;
+						z-index: 100;
+						display: none;
+					}
+
+					.cnt223 a {
+						text-decoration: none;
+					}
+
+					.popup {
+						width: 100%;
+						margin: auto;
+						display: none;
+						position: fixed;
+						z-index: 101;
+						align-content: center;
+					}
+
+					.cnt223 {
+						min-width: 1000px;
+						width: 1000px;
+						min-height: 250px;
+						margin-left: 350px;
+						margin-right: 350px;
+						background: #f3f3f3;
+						z-index: 103;
+						padding: 15px 35px;
+						border-radius: 5px;
+						box-shadow: 0 2px 5px #000;
+					}
+
+					.cnt223 h1 {
+						text-align: center;
+						font-weight: bold;
+						font-size: 200%;
+					}
+
+					.cnt223 p {
+						clear: both;
+						color: #555555;
+						/* text-align: justify; */
+						font-size: 20px;
+						font-family: sans-serif;
+					}
+
+					.cnt223 p a {
+						color: #d91900;
+						font-weight: bold;
+					}
+
+					.cnt223 .x {
+						float: right;
+						height: 35px;
+						left: 22px;
+						position: relative;
+						top: -25px;
+						width: 34px;
+					}
+
+					.cnt223 .x:hover {
+						cursor: pointer;
+					}
+				</style>
+				<script type='text/javascript'>
+					$(function () {
+						var overlay = $('<div id="overlay"></div>');
+						overlay.show();
+						overlay.appendTo(document.body);
+						$('.popup').show();
+						$('.close').click(function () {
+							$('.popup').hide();
+							overlay.appendTo(document.body).remove();
+							return false;
+						});
+
+
+
+
+						$('.x').click(function () {
+							$('.popup').hide();
+							overlay.appendTo(document.body).remove();
+							return false;
+						});
+					});
+				</script>
+				<div class='popup'>
+					<div class='cnt223'>
+						<h1>Important News</h1>
+						<div id="content">
+							<p>
+								<script>
+									$('#content').load('charities.html #main');
+								</script>
+							</p>
+						</div>
+						<a href='' class='close'>Close</a>
+					</div>
+				</div>
 				<div id="mainContent">
 					<h2 id="content">What is the Amazon?</h2>
-					<p>The Amazon is a vast region that spans across eight rapidly developing countries: Brazil, Bolivia, Peru,
-						Ecuador, Colombia, Venezuela, Guyana, Suriname and French Guiana, an overseas territory of France.
-						The landscape contains:
-
-						One in ten known species on Earth
-						1.4 billion acres of dense forests, half of the planet's remaining tropical forests
-						4,100 miles of winding rivers
-						2.6 million square miles in the Amazon basin, about 40 percent of South America
-						There is a clear link between the health of the Amazon and the health of the planet. The rain forests, which
-						contain 90-140 billion metric tons of carbon, help stabilize local and global climate. Deforestation may
-						release significant amounts of this carbon, which could have catastrophic consequences around the world. - Source
-						: <a href="https://www.worldwildlife.org/places/amazon">WWF</a></p>
+					<p id="WWFInfo">
+						"The Amazon is a vast region that spans across eight rapidly developing countries: Brazil, Bolivia Peru, Ecuador, Colombia, Venezuela, Guyana, Suriname and French Guiana, an overseas territory of France.The landscape contains: One in ten known species on Earth 1.4 billion acres of dense forests, half of the planet 's remaining tropical forests 4, 100 miles of winding rivers 2.6 million square miles in the Amazon basin, about 40 percent of South	America There is a clear link between the health of the Amazon and the health of the planet.The rain forests, which contain 90 - 140 billion metric tons of carbon, help stabilize local and global climate.Deforestation may release significant amounts of this carbon, which could have catastrophic consequences around the world.",
+						<br> <br> Source: <a href="https://www.worldwildlife.org/places/amazon"> WWF </a>
+					</p>
 						
 				</div>
-					<!-- <p>As the biggest rainforests, and having one of the biggest bosied of water in the world (The Amazon River), the Amazon is very important. Currently the Amazon touches </p> -->
 					<div class="row">
 						<div class="6u 12u$(small)">
 							<h3>In relation to us?</h3>
-							<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat commodo eu sed ante lacinia. Sapien a lorem in integer ornare praesent commodo adipiscing arcu in massa commodo lorem accumsan at odio massa ac ac. Semper adipiscing varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+							<p>"Carbon dioxide released into the atmosphere causes the world to heat up. The Amazon is one of the world’s
+								most important natural buffers for keeping us cool with forests that cover 5.5 million acres.
+								<br> <br> Source : <a href="https://amazonaid.org/why-should-you-care/">AmazonAid</a>
+								Inside the Amazon is one of the worlds largest resevoirs of Carbon Dioxide, the same stuff that is warming up
+								the Earth. And with each tree that falls more of it is released into the air. And with the fires recently, the
+								carbon dixode just goes back up. Since most trees are 80+ years old ( <a
+									href="https://www.livescience.com/3979-ancient-trees-amazon.html">Live Science</a> ) and every 40 years the tree absorbs
+								10 more tonnes of CO2. ( <a href="https://projects.ncsu.edu/project/treesofstrength/treefact.htm">North Carolina State University</a> ) It can be thought that majority of the trees burning are releasing ate least 20 tonnes of CO2, each. A huge number when you realize that all the trees are falling pretty fast.
+							</p>
 						</div>
 						<div class="6u$ 12u$(small)">
 							<h3>What exactly is happening?</h3>
-							<p>In arcu accumsan arcu adipiscing accumsan orci ac. Felis id enim aliquet. Accumsan ac integer lobortis commodo ornare aliquet accumsan erat tempus amet porttitor. Ante commodo blandit adipiscing integer semper orci eget. Faucibus commodo adipiscing mi eu nullam accumsan morbi arcu ornare odio mi adipiscing nascetur lacus ac interdum morbi accumsan vis mi accumsan ac praesent.</p>
+							<p>It's hard to find good quality news, especially ones that are real time and relevant, so while we are posting news form CNN, please be aware that this news is not the full news and as with anything, finding more sources for information is the way to go.</p>
+							<blockquote class="embedly-card" data-card-controls="0">
+								<h4><a href="https://www.cnn.com/americas/live-news/amazon-wildfire-august-2019/index.html">Wildfires rage in
+										the Amazon: Live updates</a></h4>
+								<p>By Meg Wagner and Mike Hayes, CNN Updated 4:24 p.m. ET, August 23, 2019 The Amazon is on fire: Wildfires
+									continued to burn at a record rate in Brazil's Amazon rainforest. The cause: Environmental organizations
+									and researchers say the wildfires were set by cattle ranchers and loggers who want to clear and utilize
+									the land, emboldened by the country's pro-business president.</p>
+							</blockquote>
+							<script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
 						</div>
 						<!-- Break -->
 						<div class="4u 12u$(medium)">
-							<h3>Interdum sapien gravida</h3>
-							<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-						</div>
-						<div class="4u 12u$(medium)">
-							<h3>Faucibus consequat lorem</h3>
-							<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-						</div>
-						<div class="4u$ 12u$(medium)">
-							<h3>Accumsan montes viverra</h3>
-							<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+							<h3>They beat you</h3>
+							<p><strong>And surprisingly it's a good thing</strong> As of today many countries have vowed to help the Amazon. As of 2019, out of the 5.5 million km2 of the Amazon, nearly 1.75 million km2 is resgistered as "conservation land". As of June 2019, Oil companies can no longer mine for oil in the Amazon, and they have place heavy fines for Oil mining. Peru has invested a large amount of money into animal rehabilitaion. So far the Amazon Conservation Team has mad esignificant strides in Columbia, Suriname and Brazil.</p>
 						</div>
 					</div>
 
@@ -82,7 +193,7 @@
 				<div class="inner">
 					<div class="flex">
 						<div class="copyright">
-							&copy; Untitled. Design: <a href="https://templated.co">TEMPLATED</a>. Images: <a href="https://unsplash.com">Unsplash</a>.
+							&copy; AmazonFund: The team who cares. Images: <a href="https://unsplash.com">Unsplash</a>.
 						</div>
 						<ul class="icons">
 							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
