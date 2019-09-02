@@ -4,6 +4,18 @@
 	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
 */
 
+
+
+
+
+	$('.x').click(function () {
+		$('.popup').hide();
+		overlay.appendTo(document.body).remove();
+		return false;
+	});
+});
+
+
 (function($) {
 
 	// Breakpoints.
