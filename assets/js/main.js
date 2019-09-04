@@ -6,16 +6,6 @@
 
 
 
-
-
-	$('.x').click(function () {
-		$('.popup').hide();
-		overlay.appendTo(document.body).remove();
-		return false;
-	});
-});
-
-
 (function($) {
 
 	// Breakpoints.
