@@ -4,4 +4,5 @@ We are a group of students attending high school in Canada wanting to make a dif
 
 Seeing as there was little to no help coming in from Canada, and a lot of government work had backfired. We decided to go through NGO’s, after all they seem to have more influence in the region. And after careful consideration, we also knew that there had to be steps we could take to prevent such a thing from happening again. Therefore we also allow users to sign a pledge, to ensure that governments will take action to prevent such a thing form happening.
 
-We are working to help eradicate and PREVENT the Amazon Fires, for more info please check out our site at [http://amazonfund.ca](amazonfund.ca)
+We are working to help eradicate and PREVENT the Amazon Fires, for more info please check out our site at [http://amazonfund.ca](http://amazonfund.ca/)
+If it doesn't work, please copy and paste this into the search bar.
